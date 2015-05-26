@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>CryptoSquare</title>
   <link rel="stylesheet" href="/css/lib/normalize.css" />
+  <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/style.css" />
 
   <script src='/js/lib/jquery-1.11.3.js'></script>
@@ -12,17 +13,20 @@
 </head>
 <body>
 
-  <div class='container'>
-    <h2>CryptoSquare</h2>
-    <form id="cryptosquare">
-      <label for="cryptoString">Enter your message to encrypt:  </label>
-      <input type="text" id="cryptoString">
-      <br><br>
-      <button name="submitButton">Encrypt!</button>
-    </form>
-    <br>
-    <div id='results'>
-      <span id="crypto"></span>
+  <div class='container red_grad'>
+    <div class='centered'>
+      <h2>CryptoSquare</h2>
+      <form id="cryptosquare">
+        <label for="cryptoString">Enter your message to encrypt:  </label>
+        <br>
+        <input type="text" id="cryptoString">
+        <br><br>
+        <button name="submitButton">Encrypt!</button>
+      </form>
+      <br>
+      <div id='results'>
+        <span id="crypto"></span>
+      </div>
     </div>
   </div>
 

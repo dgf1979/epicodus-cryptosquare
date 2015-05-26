@@ -16,8 +16,9 @@ $(document).ready(function() {
     var cryptoString = $("input#cryptoString").val();
     var result = encrypt(cryptoString);
     $("#crypto").hide();
-    $("#crypto").text(result);
-    $("#crypto").fadeIn(2000);
+    $("#crypto").text('"' + result + '"');
+    $(".container").toggleClass("green_grad");
+    $("#crypto").fadeIn(1400);
     event.preventDefault();
   });
 });

@@ -2,18 +2,65 @@
   background-color: black;
   color: white;
 }
+body {
+  height: 100%;
+  background-color: black;
+}
 
 div.container {
-  background-color: black;
-  color: white;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 20px;
-  padding: 10px;
+  margin: auto;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+  width: 100%
+}
+
+div.red_grad {
+  background: radial-gradient(red, transparent, black);
+}
+
+div.green_grad {
+  background: radial-gradient(lime, transparent, black);
+}
+
+div.centered form {
+  margin: 1em;
+}
+
+div.centered form input {
+  outline: none;
+  text-align: center;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+  background: black;
+  color: red;
+  width: 98%;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(200, 0, 0, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(200, 0, 0, 1);
+}
+
+div.centered {
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(0,0,0, 0.6);
+  color: white;
+  padding: 20px;
+  border-style: dotted;
+  border-color: #768d87;
+  border-width: 6px;
 }
 
 #results {
   color: lime;
-  font-family: "Lucida Console", Monaco, monospace;
+  /*font-family: "Lucida Console", Monaco, monospace;*/
+  font-family: 'Orbitron', sans-serif;
   font-weight: bold;
   font-size: 2em;
   margin: auto;
@@ -26,6 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
+  outline: none;
   -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
   -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
   box-shadow:inset 0px 1px 3px 0px #91b8b3;
@@ -62,6 +110,7 @@ button:hover {
   background-color:#6c7c7c;
 }
 button:active {
+  outline: none;
   position:relative;
   top:1px;
 }
