@@ -1,22 +1,23 @@
-## [APPNAME] ##
+## CryptoSquare ##
 
 This application is meant to fulfill the requirements of an assignment through Epicodus code school. For more information on Epicodus, see <http://www.epicodus.com/>.
 
 ### Description ###
 
-[simple app description]
+Mangle some text to display usage of javascript
 
-**Assignment:** [assignment title]
+**Assignment:** Cryptosquare
 
 **<https://www.learnhowtoprogram.com/table-of-contents>**
 
 ### Author(s) ###
 
-Andrew Finstrom
+Andrew Finstrom & Jesse James
 
 ### Setup ###
 ```
-    setup code or details here
+    serve from http server and open:
+    cryptosquare.html
 ```
 
 ### License ###
