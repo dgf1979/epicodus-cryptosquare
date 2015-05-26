@@ -14,7 +14,11 @@ var foo = function(bar) {
 };
 
 var normalizeText = function(text) {
-  var temp_text = text.toLowerCase()
+  var temp_text = text.toLowerCase();
   return temp_text.replace(/[^a-zA-Z0-9]/g, "");
 
+}
+
+var columns = function(text) {
+  return Math.floor(Math.sqrt(text.length));
 }

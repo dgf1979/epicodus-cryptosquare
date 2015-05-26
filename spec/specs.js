@@ -12,5 +12,10 @@ describe('normalizeText', function() {
   it("downcases all alphabetic characters", function() {
     expect(normalizeText('IHaVeBAdcar')).to.equal('ihavebadcar');
   });
+});
 
+describe('columns', function() {
+  it("determines the correct number of columns to break the string into", function() {
+    expect(columns('ihaveabadcar')).to.equal(3);
+  });
 });
