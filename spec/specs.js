@@ -8,4 +8,9 @@ describe('normalizeText', function() {
   it("removes non-alpha numeric characters", function() {
     expect(normalizeText('i.have?badc#ar$')).to.equal('ihavebadcar');
   });
+
+  it("downcases all alphabetic characters", function() {
+    expect(normalizeText('IHaVeBAdcar')).to.equal('ihavebadcar');
+  });
+
 });
