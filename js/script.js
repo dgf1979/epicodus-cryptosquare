@@ -11,11 +11,13 @@ $( document ).ready(function() {
 //form processing
 $(document).ready(function() {
   $("#result").hide();
+
   $("form#cryptosquare").submit(function(event) {
     var cryptoString = $("input#cryptoString").val();
     var result = encrypt(cryptoString);
+    $("#crypto").hide();
     $("#crypto").text(result);
-    $("#result").show();
+    $("#crypto").fadeIn(2000);
     event.preventDefault();
   });
 });
