@@ -29,3 +29,16 @@ var chunkArray = function(text) {
   var result = text.match(regex);
   return result;
 }
+
+var encrypt = function(text) {
+  var arr1 = chunkArray(text);
+  var new_string = "";
+  for (var col = 0; col < columns(text); col++) {
+    for (var row = 0; row < arr1.length; row++) {
+      new_string += arr1[row].substring(col, col + 1);
+    }
+  }
+  var regex = new RegExp(".{1,5}", "g");
+  console.log(new_string.match(regex));
+  return new_string.match(regex).join(" ");
+}

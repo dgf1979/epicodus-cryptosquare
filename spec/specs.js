@@ -25,3 +25,9 @@ describe('chunkArray', function() {
     expect(chunkArray('ihaveabadcar').length).to.equal(4);
   });
 });
+
+describe('encrypt', function() {
+  it("encrypts the string", function() {
+    expect(encrypt('ihaveabadcar')).to.equal('ivbch eaaaa dr');
+  });
+});
