@@ -22,3 +22,10 @@ var normalizeText = function(text) {
 var columns = function(text) {
   return Math.floor(Math.sqrt(text.length));
 }
+
+var chunkArray = function(text) {
+  var cols = columns(text);
+  var regex = new RegExp(".{1," + cols + "}", "g");
+  var result = text.match(regex);
+  return result;
+}

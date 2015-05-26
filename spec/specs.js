@@ -19,3 +19,9 @@ describe('columns', function() {
     expect(columns('ihaveabadcar')).to.equal(3);
   });
 });
+
+describe('chunkArray', function() {
+  it("has a number of elements equalling the rows given the columns required", function() {
+    expect(chunkArray('ihaveabadcar').length).to.equal(4);
+  });
+});
